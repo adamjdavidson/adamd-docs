@@ -25,11 +25,19 @@ jobs:
           submodules: recursive
           fetch-depth: 0
           
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.143.0'
           extended: true
+          
+      - name: Setup Hugo Modules
+        run: hugo mod tidy
           
       - name: Build with Hugo
         env:

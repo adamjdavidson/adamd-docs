@@ -1,16 +1,29 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: Adam Davidson's Writing
+baseURL: 'https://adamjdavidson.github.io/adamd-docs/'
+languageCode: 'en-us'
+title: "Adam Davidson's Writing"
+
+# Theme configuration
 module:
   imports:
     - path: github.com/imfing/hextra
 
+# Theme settings
 params:
   theme:
-    # light | dark | system
     default: system
     displayToggle: true
+  
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      link: /
+      width: 40
+      height: 20
 
+# Navigation
 menu:
   main:
     - name: Documentation
@@ -26,18 +39,3 @@ menu:
       weight: 4
       params:
         type: search
-
-params:
-  navbar:
-    displayTitle: true
-    displayLogo: true
-    logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg
-      link: /
-      width: 40
-      height: 20
-
-baseURL: 'https://adamjdavidson.github.io/adamd-docs/'
-languageCode: 'en-us'
-title: 'Adam Davidson's writing'
