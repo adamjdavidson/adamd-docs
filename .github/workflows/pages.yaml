@@ -44,7 +44,14 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: hugo --minify
-            
+      
+   - name: Debug: List contents of public folder
+     run: ls -laR public
+     
+   - name: Debug: Manually tar the public folder
+     run: tar -czf debug_public.tar.gz public
+
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
