@@ -37,3 +37,7 @@ params:
       link: /
       width: 40
       height: 20
+
+baseURL: 'https://adamjdavidson.github.io/adamd-docs/'
+languageCode: 'en-us'
+title: 'Adam Davidson's writing'

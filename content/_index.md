@@ -1,5 +1,7 @@
 ---
-date: '2025-02-08T13:24:14-05:00'
-draft: true
-title: ''
+title: "Welcome to My Site"
+date: 2025-02-08
+draft: false
 ---
+
+Welcome to my documentation site!
