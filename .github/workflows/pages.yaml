@@ -45,8 +45,11 @@ jobs:
           HUGO_ENV: production
         run: hugo --minify
           
+      - name: Debug: List repository root
+	run: ls -la
+
       - name: Debug: List contents of public folder
-        run: ls -laR public
+        run: ls -laR public || echo "public folder not found"
           
       - name: Debug: Manually tar the public folder
         run: tar -czf debug_public.tar.gz public
