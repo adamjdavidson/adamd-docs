@@ -4,3 +4,9 @@ public/
 resources/
 .env
 node_modules/
+# Add these lines
+**/id_*
+**/.*_key
+**/.*_key.pub
+key
+key.pub
